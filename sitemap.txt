@@ -1,0 +1,6 @@
+-index.html(homepage)
+-blog.html
+	+archives.html
+-about.html
+-stats.html
+-standings.html

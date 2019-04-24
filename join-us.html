@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <!--https://fonts.google.com/specimen/Playball?selection.family=Playball-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>YankYak</title>
+    <style>
+        .fab {
+            color: #002A5C;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+        .carousel{
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body class="background_img" background="images/pinstripes.jpg"></body>
+
+
+    <!--START NAV BAR                        NAVBAR-COLLPASE IN LINE 39: KEEP IT AND Z INDEX IS SCREWED UP. TAKE IT OUT AND MY NAVBAR LINKS GO AWAY. NAVBAR TAG IN 39: (i DELETED) IF I ADD IT THEN THE NAVBAR WORKS PERFECTLY BUT ON FULL SCREEN IT SCREWS UP THE LAYOUT OF THE NAVBAR SLIGHTLY  -->
+    <nav class=" navbar navbar-expand-md navbar-dark sticky-top">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand playball" href="./index.html">YankYak</a>
+        
+       <!--here--> <div class=" navbar collapse navbar-collapse navbar-default navbar-static-top" id="navbarsExample03" style = "height: 100%;">
+            <ul class="navbar-nav mr-auto"><!--mr-auto??-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./players-social-media.html">Follow Yanks</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">About Us</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown03">
+                        <a class="dropdown-item" href="./about.html">About Us</a>
+                        <a class="dropdown-item" href="./join-us.html">Want to Join the Team?</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
+        </div>
+    </nav>
+    <!--END NAV BAR-->
+
+<main class="container">
+<!--Carasuel-->
+<br><br>
+<h1 class="playball yankee-blue text-center img-fluid">Intested in Joining the Team?</h1>
+            <img src="./images/stadium-alds.JPG" class="d-block w-100" alt="Yankee Stadium during ALDS of 2018">
+          <hr>
+          <p class="text-center playball">Feel free to fill out this form to let us learn a little bit about you. If we are interested, we will reach out.</p>
+    <body class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 order-md-1">
+<!--First Name-->                    
+                    <form class="needs-validation" novalidate="">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName"><b> First name</b></label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+<!--Last Name-->                    
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName"><b>Last Name</b></label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+                        </div>
+<!--Twitter-->                           
+                            <form class="needs-validation" novalidate="">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="twiter"><b>Twitter</b><span class="text-muted">(Optional)</span></label>
+                                       <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div> 
+                                        <input type="text" class="form-control" id="firstName" placeholder="Username" value=""
+                                            required="">
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+                                </div>    
+<!--Instagram-->                                    
+                                
+                        <div class="col-md-6 mb-3">
+                                <label for="twiter"><b>Instagram</b><span class="text-muted">(Optional)</span></label>
+                                <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="username" placeholder="Username"
+                                    required="">
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Your username is required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--LinkedIn-->
+<div class="row">
+                        <div class="col-md-6 mb-3">
+                                <label for="twiter"><b>LinkedIn</b><span class="text-muted">(Optional)</span></label>
+                                <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="username" placeholder="Username"
+                                    required="">
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Your username is required.
+                                </div>
+                            </div>
+                        </div>
+<!--Facebook-->
+                        <div class="col-md-6 mb-3">
+                                <label for="twiter"><b>Facebook</b><span class="text-muted">(Optional)</span></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="username" placeholder="Username"
+                                        required="">
+                                    <div class="invalid-feedback" style="width: 100%;">
+                                        Your username is required.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--Email-->
+<div class="row">
+                        <div class="col-md-6">
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+<!--Birthday-->                        
+                        <div class=" col-md-6 form-group">
+                                <label for="birthDate" class="col-sm-3 control-label"><b>Date of Birth</b></label>
+                                <div class="col-sm-9">
+                                    <input type="date" id="birthDate" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="country"><b>Country</b></label>
+                                <select class="custom-select d-block w-100" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="state"><b>State</b></label>
+                                <select class="custom-select d-block w-100" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                    <option>New York</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="zip"><b>Zip Code</b></label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Zip code required.
+                                </div>
+                            </div>
+                        </div>
+
+<!--Gender-->
+                        <div class="form-group">
+                                <label class="control-label col-sm-3"><b>Gender</b></label>
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <label class="radio-inline">
+                                                <input type="radio" id="femaleRadio" value="Female">Female
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label class="radio-inline">
+                                                <input type="radio" id="maleRadio" value="Male">Male
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label class="radio-inline">
+                                                <input type="radio" id="uncknownRadio" value="Unknown">N/A
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+                <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+                    crossorigin="anonymous"></script>
+                <script src="form-validation.js"></script>
+
+
+            </div>
+        </div>
+</main>
+<br><br>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand playball" href="./index.html">YankYak</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <i class="fab fa-twitter padding-left"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-snapchat-ghost"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-facebook-f"></i>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

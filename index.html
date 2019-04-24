@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <!--https://fonts.google.com/specimen/Playball?selection.family=Playball-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>YankYak</title>
+    <style>
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body background="images/pinstripes.jpg">
+    <!--https://www.w3schools.com/tags/att_body_background.asp-->
+    <!--START NAV BAR                        NAVBAR-COLLPASE IN LINE 39: KEEP IT AND Z INDEX IS SCREWED UP. TAKE IT OUT AND MY NAVBAR LINKS GO AWAY. NAVBAR TAG IN 39: (i DELETED) IF I ADD IT THEN THE NAVBAR WORKS PERFECTLY BUT ON FULL SCREEN IT SCREWS UP THE LAYOUT OF THE NAVBAR SLIGHTLY  -->
+    <nav class=" navbar navbar-expand-md navbar-dark sticky-top">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand playball" href="./index.html">YankYak</a>
+        
+       <!--here--> <div class=" navbar collapse navbar-collapse navbar-default navbar-static-top" id="navbarsExample03" style = "height: 100%;">
+            <ul class="navbar-nav mr-auto"><!--mr-auto??-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./players-social-media.html">Follow Yanks</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">About Us</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown03">
+                        <a class="dropdown-item" href="./about.html">About Us</a>
+                        <a class="dropdown-item" href="./join-us.html">Want to Join the Team?</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
+        </div>
+    </nav>
+    <!--END NAV BAR-->
+    <br><br>
+    <main class="text-center container">
+        <div class="row">
+            <div class="col-md-7 col-sm-12 col-xs-12;">
+                <!--START MAIN LEFT-->
+                <h1 class="text-center yankee-blue">Latest Blog Posts</h1>
+                <br>
+                <div class="padding">
+                    <div class="row">
+                        <div class="col-md-">
+                            <div class="card mb-4 shadow-sm">
+                                <h3 class="playball"><a href=blog.html>The 2019 Yankees Starting Lineup</a></h3>
+                                <hr>
+                                <img class="img-fluid" src="./images/aaron-judge.png" alt="Aaron Judge Hitting">
+                                <div class="card-body">
+                                    <p class="card-text">After a few new additions to the roster and factoring in
+                                        Severino's
+                                        injury, let's guess what the Yanks will open up with starting the 2019
+                                        season on March 28th.</p>
+                                    <p>By Dylan McGee</p>
+                                    <a href="./about.html"><img src="./images/dylan-mcgee.jpg"
+                                            alt="Dylan McGee's Article" width="50" class="border-radius"></a>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-">
+                            <div class="card mb-4 shadow-sm">
+                                <h3 class="playball"><a href=blog.html>Yankees Sign Severino and Avoid Arbitration</a>
+                                </h3>
+                                <hr>
+                                <img class="img-fluid" src="./images/severino.png" alt="Aaron Judge Hitting">
+                                <div class="card-body">
+                                    <p class="card-text">Severino agrees to a contract extension and avoids the
+                                        arbitration faced by most young players. Is there more extensios to come in the
+                                        future?</p>
+                                    <p>By Chris McGee</p>
+                                    <a href="./about.html"><img src="./images/chris-mcgee.jpg"
+                                            alt="Dylan McGee's Article" width="50" class="border-radius"></a>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-">
+                            <div class="card mb-4 shadow-sm">
+                                <h3 class="playball"><a href=blog.html>Jacoby Ellsbury Set to Join Spring Training March
+                                        16th</a></h3>
+                                <hr>
+                                <img class="img-fluid" src="./images/jacoby-ellsbury.jpg" alt="Aaron Judge Hitting">
+                                <div class="card-body">
+                                    <p class="card-text">Finally, after being ridiculed with injuries for a whole
+                                        season, Ellsbury will be joining the Yanks once again later this month. How will
+                                        this affect the outfield?</p>
+                                    <p>By Dylan McGee</p>
+                                    <a href="./about.html"><img src="./images/dylan-mcgee.jpg"
+                                            alt="Dylan McGee's Article" width="50" class="border-radius"></a>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-">
+                            <div class="card mb-4 shadow-sm">
+                                <h3 class="playball"><a href=blog.html>Greg Bird or Luke Voit at First Base?</a></h3>
+                                <hr>
+                                <img class="img-fluid" src="./images/greg-bird-vs-luke-voit.jpg"
+                                    alt="Greg Bird (Left) Luke Voit (Right) ">
+                                <div class="card-body">
+                                    <p class="card-text">We all know how hot Luke Voit ended in the Bronx last season.
+                                        Will that give him a leg ahead against our past #1 prospect? Do we give Bird
+                                        another chance?</p>
+                                    <p>By Dylan McGee</p>
+                                    <a href="./about.html"><img src="./images/dylan-mcgee.jpg"
+                                            alt="Dylan McGee's Article" width="50" class="border-radius"></a>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--END MAIN LEFT-->
+            <!--START MAIN RIGHT-->
+            <div class="col-md-5">
+                <h1 class="playball yankee-blue text-center">Twitter</h1>
+                <a class="twitter-timeline" data-height="600" data-theme="light" data-link-color="#002a5c"
+                    href="https://twitter.com/YankYak2019?ref_src=twsrc%5Etfw">Tweets by YankYak2019</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!--EMBEDDED TWITTER FEED USING TWITTER'S WIDGET FUNCTION-->
+                <script type="text/javascript"
+                    src="https://widgets.sports-reference.com/wg.fcgi?script=br_standings&amp;params=br_standings_lg:AL,br_standings_div:E,br_standings_css:0&amp;css=1"></script>
+                <!--EMBEDDED STANDINGS USING BASEBALL REFERENCE WIDGET FUNCTION-->
+                <section class="row">
+                    <br>
+                    <hr>
+                    <!--START STAT LEADERS-->
+                    <!--START CAROUSEL-->
+                    <h2 class=" text-center playball">Stat Leaders:</h2>
+                    <div class="row">
+                            <div id="carouselExampleControls" class="carousel slide px-4" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active img-fluid">
+                                        <img class="d-block w-100" src="./images/aaron-judge-2.jpg" alt="Aaron Judge: Homerun Leader">
+                                        <div class="carousel-caption d-none d-md-block">
+                                                <h5>Homeruns</h5>
+                                                <p>Aaron Judge</p>
+                                              </div>
+                                      </div>
+                                      <div class="carousel-item img-fluid">
+                                        <img class="d-block w-100" src="./images/brett-gardner-2.jpg" alt="Brett Gardner: Steals Leader">
+                                        <div class="carousel-caption d-none d-md-block">
+                                                <h5>Stolen Bases</h5>
+                                                <p>Brett Gardner</p>
+                                              </div>
+  
+                                    </div>
+                                      <div class="carousel-item img-fluid">
+                                        <img class="d-block w-100" src="./images/luke-voit-2.jpg" alt="Luke Voit: Doubles Leader">
+                                        <div class="carousel-caption d-none d-md-block">
+                                                <h5>Doubles</h5>
+                                                <p>Luke Voit</p>
+                                              </div>
+
+                                    </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+                                  </div>
+                        <!--END CAROUSEL-->
+                </section>
+                <hr>
+                <!--END CALENDAR-->
+
+                <div class="jumbotron">
+                    <!--'OTHER BLOG POSTS'-->
+                    <h1 class="display-4 yankee-blue">Other Blog Posts!</h1>
+                    <p class="lead text-left">Comparing the Yankees to the AL East</p>
+                    <p class="lead text-left">What Happened to Getting New York Native Pat Corbin?</p>
+                    <p class="lead text-left">Campaigning for Harper</p>
+                    <hr class="my-4">
+                    <p>We list all of our blog posts in conological order located in our <i>Blog</i> tab. Read up on the
+                        latest Yankees news!</p>
+                    <a class="btn btn-primary btn-lg" href="blog.html" role="button">Learn more</a>
+                </div><!-- END 'OTHER BLOG POSTS'-->
+            </div>
+
+            <!--END MAIN RIGHT-->
+
+        </div>
+    </main>
+    <br><br>
+    <!--FOOTER-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand playball" href="./index.html">YankYak</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <i class="fab fa-twitter padding-left"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-snapchat-ghost"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-facebook-f"></i>
+    </nav>
+    <!--END FOOTER-->
+    <!--BOOTSTRAP JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+  
+
+
+</body>
+
+</html>
