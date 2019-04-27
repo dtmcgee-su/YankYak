@@ -28,7 +28,7 @@
     </style>
 </head>
 
-<body class="background_img" background="images/pinstripes.jpg"></body>
+<body background="images/pinstripes.jpg">
 
 
     <!--START NAV BAR                        NAVBAR-COLLPASE IN LINE 39: KEEP IT AND Z INDEX IS SCREWED UP. TAKE IT OUT AND MY NAVBAR LINKS GO AWAY. NAVBAR TAG IN 39: (i DELETED) IF I ADD IT THEN THE NAVBAR WORKS PERFECTLY BUT ON FULL SCREEN IT SCREWS UP THE LAYOUT OF THE NAVBAR SLIGHTLY  -->
@@ -75,7 +75,6 @@
             <img src="./images/stadium-alds.JPG" class="d-block w-100" alt="Yankee Stadium during ALDS of 2018">
           <hr>
           <p class="text-center playball">Feel free to fill out this form to let us learn a little bit about you. If we are interested, we will reach out.</p>
-    <body class="bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 order-md-1">
@@ -100,31 +99,34 @@
                                 </div>
                             </div>
                         </div>
+                        </form>
 <!--Twitter-->                           
                             <form class="needs-validation" novalidate="">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="twiter"><b>Twitter</b><span class="text-muted">(Optional)</span></label>
+                                        <label for="twitter"><b>Twitter</b><span class="text-muted">(Optional)</span></label>
                                        <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">@</span>
                                 </div> 
-                                        <input type="text" class="form-control" id="firstName" placeholder="Username" value=""
+                                        <input type="text" class="form-control" id="twitter" placeholder="Username" value=""
                                             required="">
                                         <div class="invalid-feedback">
                                             Valid first name is required.
                                         </div>
                                     </div>
-                                </div>    
+                                </div>   
+                                </div> 
+                            </form>
 <!--Instagram-->                                    
                                 
                         <div class="col-md-6 mb-3">
-                                <label for="twiter"><b>Instagram</b><span class="text-muted">(Optional)</span></label>
+                                <label for="instagram"><b>Instagram</b><span class="text-muted">(Optional)</span></label>
                                 <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">@</span>
                                 </div>
-                                <input type="text" class="form-control" id="username" placeholder="Username"
+                                <input type="text" class="form-control" id="instagram" placeholder="Username"
                                     required="">
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Your username is required.
@@ -135,12 +137,12 @@
 <!--LinkedIn-->
 <div class="row">
                         <div class="col-md-6 mb-3">
-                                <label for="twiter"><b>LinkedIn</b><span class="text-muted">(Optional)</span></label>
+                                <label for="linkedin"><b>LinkedIn</b><span class="text-muted">(Optional)</span></label>
                                 <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">@</span>
                                 </div>
-                                <input type="text" class="form-control" id="username" placeholder="Username"
+                                <input type="text" class="form-control" id="linkedin" placeholder="Username"
                                     required="">
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Your username is required.
@@ -149,12 +151,12 @@
                         </div>
 <!--Facebook-->
                         <div class="col-md-6 mb-3">
-                                <label for="twiter"><b>Facebook</b><span class="text-muted">(Optional)</span></label>
+                                <label for="facebook"><b>Facebook</b><span class="text-muted">(Optional)</span></label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">@</span>
                                     </div>
-                                    <input type="text" class="form-control" id="username" placeholder="Username"
+                                    <input type="text" class="form-control" id="facebook" placeholder="Username"
                                         required="">
                                     <div class="invalid-feedback" style="width: 100%;">
                                         Your username is required.
@@ -235,7 +237,7 @@
                                 </div>
                             </div>
 
-                
+                        </div>
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                     crossorigin="anonymous"></script>
@@ -246,21 +248,13 @@
                 <script src="form-validation.js"></script>
 
 
-            </div>
+            
         </div>
 </main>
 <br><br>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand playball" href="./index.html">YankYak</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <i class="fab fa-twitter padding-left"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-snapchat-ghost"></i>
-    <i class="fab fa-linkedin-in"></i>
-    <i class="fab fa-facebook-f"></i>
+
 </nav>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
